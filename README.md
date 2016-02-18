@@ -22,6 +22,6 @@ $manager = new ActionManager($factory);
 $connect_action = new ConnectionAction('Buttress', '#buttress');
 $manager->add('CONNECT', $connection_action);
 
-$connection = new \Connection($manager, 'irc.freenode.org');
+$connection = new Connection($manager, 'irc.freenode.org');
 $connection->connect();
 ```
